@@ -1,0 +1,18 @@
+textview, textview > text {
+    background-color: inherit;
+}
+
+.main {
+    background: @content_view_bg;
+}
+
+@import "channel.css";
+@import "channel_sidebar.css";
+@import "channel_sidebar_row.css";
+@import "composer.css";
+@import "join_channel_dialog.css";
+@import "message.css";
+@import "open_dm_dialog.css";
+@import "sidebar.css";
+@import "sidebar_row.css";
+@import "user_card.css";

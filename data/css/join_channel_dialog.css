@@ -1,0 +1,12 @@
+.join_channel_dialog__search {
+    margin: 10px;
+    margin-bottom:0;
+}
+
+.join_channel_dialog__window {
+    margin: 10px;
+}
+
+.join_channel_dialog__channels > row {
+    padding: 5px;
+}

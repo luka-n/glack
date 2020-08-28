@@ -1,0 +1,7 @@
+.user_card > * {
+    margin: 5px;
+}
+
+.user_card__header_label {
+    margin-left: 5px;
+}

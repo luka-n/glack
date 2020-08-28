@@ -1,0 +1,12 @@
+.channel_sidebar_row {
+    padding: 5px 10px;
+}
+
+.channel_sidebar_row__icon {
+    color: shade(@theme_fg_color, 2);
+    margin-right: 5px;
+}
+
+.channel_sidebar_row:selected .channel_sidebar_row__icon {
+    color: inherit;
+}

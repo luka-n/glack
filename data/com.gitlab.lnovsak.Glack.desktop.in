@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Glack
+Exec=glack
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

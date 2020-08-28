@@ -1,0 +1,5 @@
+.sidebar__header {
+    border-bottom: 1px solid @borders;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,36 @@
+.message {
+    padding: 5px 10px;
+}
+
+.message__time {
+    color: shade(@theme_fg_color, 2);
+    font-size: 80%;
+}
+
+.message__user {
+    font-weight: bold;
+}
+
+.message > box > * { margin-left: 7.5px; margin-right: 7.5px; }
+.message > box > *:first-child { margin-left: 0; }
+.message > box > *:last-child { margin-right: 0; }
+
+.message > box > box > * { margin-bottom: 3.75px; margin-top: 3.75px; }
+.message > box > box > *:first-child { margin-top: 0; }
+.message > box > box > *:last-child { margin-bottom: 0; }
+
+.message > box > box > box > * { margin-left: 3.75px; margin-right: 3.75px; }
+.message > box > box > box > *:first-child { margin-left: 0; }
+.message > box > box > box > *:last-child { margin-right: 0; }
+
+.message--unread {
+    border-top: 1px solid shade(red, 0.75);
+}
+
+.message--unread ~ .message--unread {
+    border-top: 0;
+}
+
+.message__url_previews > * { margin-bottom: 5px; margin-top: 5px; }
+.message__url_previews > *:first-child { margin-top: 0; }
+.message__url_previews > *:last-child { margin-bottom: 0; }

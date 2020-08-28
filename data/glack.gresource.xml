@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/gitlab/lnovsak/Glack">
+    <file>css/application.css</file>
+    <file>css/channel.css</file>
+    <file>css/channel_sidebar.css</file>
+    <file>css/channel_sidebar_row.css</file>
+    <file>css/composer.css</file>
+    <file>css/join_channel_dialog.css</file>
+    <file>css/message.css</file>
+    <file>css/open_dm_dialog.css</file>
+    <file>css/sidebar.css</file>
+    <file>css/sidebar_row.css</file>
+    <file>css/user_card.css</file>
+    <file>ui/channel.ui</file>
+    <file>ui/channel_sidebar.ui</file>
+    <file>ui/channel_sidebar_row.ui</file>
+    <file>ui/composer.ui</file>
+    <file>ui/join_channel_dialog.ui</file>
+    <file>ui/message.ui</file>
+    <file>ui/open_dm_dialog.ui</file>
+    <file>ui/sidebar.ui</file>
+    <file>ui/sidebar_row.ui</file>
+    <file>ui/user_card.ui</file>
+    <file>ui/window.ui</file>
+  </gresource>
+</gresources>

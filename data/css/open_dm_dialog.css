@@ -1,0 +1,16 @@
+.open_dm_dialog__search {
+    margin: 10px;
+    margin-bottom:0;
+}
+
+.open_dm_dialog__window {
+    margin: 10px;
+}
+
+.open_dm_dialog__users > row {
+    padding: 5px;
+}
+
+.open_dm_dialog__users > row > box > label {
+    margin-left: 5px;
+}

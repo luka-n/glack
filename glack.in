@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import gettext
+import locale
+import os
+import signal
+import sys
+
+data_dir = '@data_dir@'
+local_build = @local_build@
+locale_dir = '@locale_dir@'
+python_dir = '@python_dir@'
+
+if local_build:
+   sys.path.insert(1, python_dir)
+
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+
+locale.bindtextdomain('glack', locale_dir)
+locale.textdomain('glack')
+
+gettext.bindtextdomain('glack', locale_dir)
+gettext.textdomain('glack')
+
+if __name__ == '__main__':
+    import gi
+
+    from gi.repository import Gio
+    resource = Gio.Resource.load(os.path.join(data_dir, 'glack.gresource'))
+    resource._register()
+
+    from glack.application import Application
+    app = Application()
+    sys.exit(app.run(sys.argv))

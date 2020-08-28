@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <template class="ChannelSidebarRow" parent="GtkListBoxRow">
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <child>
+      <object class="GtkEventBox" id="event_box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="icon">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">16</property>
+                <style>
+                  <class name="channel_sidebar_row__icon"/>
+                </style>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="ellipsize">end</property>
+                <property name="xalign">0</property>
+                <style>
+                  <class name="channel_sidebar_row__label"/>
+                </style>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="channel_sidebar_row"/>
+    </style>
+  </template>
+  <object class="GtkPopover" id="card_popover">
+    <property name="can_focus">False</property>
+    <property name="relative_to">ChannelSidebarRow</property>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+  <object class="GtkPopover" id="menu_popover">
+    <property name="can_focus">False</property>
+    <property name="relative_to">ChannelSidebarRow</property>
+    <property name="position">bottom</property>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>
